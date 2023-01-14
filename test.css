@@ -1,0 +1,372 @@
+body{
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    background-color: black;
+    margin-bottom: 12px;
+    color: white;
+    position: relative;
+    display: flex;
+}
+
+body section:nth-child(1){
+    background-image: url('./netflix-background.jpg');
+    background-size: cover;
+    display: block;
+}
+
+.sec-1{
+    background-color: rgba(0, 0, 0, 0.611);
+}
+
+.sec-1 nav{
+    padding-top: 15px;
+    margin-bottom: 10%;
+}
+
+nav{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav img{
+    max-width: 145px;
+}
+
+button{
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+nav button{
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 90px;
+    border-radius: 6px;
+    align-self: center;
+}
+
+section div{
+    width: 50%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+
+section:nth-child(1) div{
+    margin: auto;
+    width: auto;
+}
+
+section div > img{
+    width: 100%;
+}
+
+section h2{
+    font-size: 50px;
+    max-width: 640px;
+    margin: auto;
+}
+
+section p{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+section span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.get-started{
+    padding: 20px 25%;
+    padding-bottom: 15%;
+}
+
+form{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    height: 55px;
+}
+
+form input, form button{
+    margin: none;
+    padding: none;
+    border: none;
+    outline: none;
+    align-items: stretch;
+}
+
+form button{
+    width: 35%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form button:hover{
+    background-color: red;
+}
+
+form input{
+    width: 70%;
+    font-size: 18px;
+    padding-left: 3%;
+}
+
+.st-mobile{
+    background-image: url('./stranger-things.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    position: relative;
+}
+
+.st-mobile > div{
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border: 3px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    top: 380px;
+}
+
+.video-c{
+    position: relative;
+    z-index: 2;
+}
+
+.video-c img{
+    width: 100%;
+}
+
+.video-c .video{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    z-index: -1;
+    width: 80%;
+}
+
+.video video{
+    width: 100%;
+}
+
+.st-mobile div img{
+    align-self: center;
+    width: auto;
+    height: 80%;
+}
+
+.st-mobile-info{
+    text-align: left;
+}
+
+.st-mobile-info span{
+    font-size: 16px;
+}
+
+.blue{
+    color: blue;
+}
+
+section:nth-child(6){
+    display: block;
+}
+
+section:nth-child(6) div{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.faq{
+    max-width: 800px;
+}
+
+.faq label{
+    font-size: 26px;
+    padding: 15px 0;
+    padding-left: 15px;
+    display: block;
+    background-color: #333;
+    background-image: url('./icon_close.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+.faq label:hover{
+    cursor: pointer;
+}
+
+.question{
+    text-align: left;
+}
+
+.faq-head{
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.faq-info{
+    background-color: #333;
+    text-align: left;
+}
+
+.hide{
+    display: none;
+}
+
+.faq-info{
+    border-top: 2px solid black;
+    display: none;
+}
+
+#tog input:checked + label + .faq-info{
+    display: block;
+}
+
+section div.faq{
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.faq p{
+    padding: 15px 0;
+    padding-left: 15px;
+    margin: 0;
+}
+
+footer{
+    background-color: black;
+    padding: 40px 20%;
+}
+
+footer a{
+    color: rgb(165, 165, 165);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+}
+
+footer a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links a{
+    font-size: 18px;
+}
+
+.links div{
+    width: 160px;
+    margin: 20px 0;
+}
+
+@media screen and (width < 900px){
+    section{
+        flex-direction: column-reverse;
+    }
+
+    section:nth-child(2), section:nth-child(6){
+        flex-direction: column;
+    }
+
+    section > div{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    section h2{
+        margin-top: 40px;
+    }
+
+    .get-started{
+        padding: 20px 10px;
+    }
+
+    form{
+        display: block;
+        height: auto;
+    }
+
+    form button, form input{
+        height: 55px;
+        margin-bottom: 20px;
+        min-width: 280px;
+    }
+
+    form button{
+        width: 45%;
+        min-width: 150px;
+    }
+
+    .video-c img{
+        max-width: 550px;
+    }
+}
+
+@media screen and (width < 550px){
+    section h2{
+        font-size: 26px;
+    }
+
+    section p{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+    
+
+    section > div{
+        width: 95%;
+    }
+
+    .st-mobile > div{
+        width: 90%;
+    }
+
+    footer{
+        padding: 40px 10%;
+    }
+
+    .faq{
+        margin: 0;
+        width: 100%;
+    }
+
+    .faq label{
+        font-size: 18px;
+        background-size: 20px;
+    }
+    
+}
